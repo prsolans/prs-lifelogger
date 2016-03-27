@@ -1,4 +1,3 @@
-HI
 <?php
 
 echo "yo";
