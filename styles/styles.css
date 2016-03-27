@@ -3,6 +3,7 @@ body {
 }
 
 label {
+	clear: both;
 	float: left;
 	min-width: 100px;
 }

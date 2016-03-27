@@ -1,16 +1,37 @@
 {
   "categories": [
     {
-      "name": "Training"
+      "name": "Training",
+      "activities": [
+          { "name" : "Personal training session" },
+          { "name" : "Run" },
+          { "name" : "7-minute workout" }
+      ]
     },
     {
-      "name": "Meditation"
+      "name": "Meditation",
+      "activities": [
+          { "name" : "5 minutes" },
+          { "name" : "10 minutes" },
+          { "name" : "15 minutes" },
+          { "name" : "20 minutes" }
+      ]
     },
     {
-      "name": "Golf"
+      "name": "Golf",
+      "activities": [
+          { "name" : "Chip/Putt" },
+          { "name" : "Driving Range" },
+          { "name" : "9 holes" },
+          { "name" : "18 holes"}
+      ]
     },
     {
-      "name": "Tennis"
+      "name": "Tennis",
+      "activities": [
+          { "name" : "Practice" },
+          { "name" : "Match" }
+      ]
     }
   ]
 }
