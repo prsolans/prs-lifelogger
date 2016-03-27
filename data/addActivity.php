@@ -1,9 +1,9 @@
 <?php
 	require 'connect.php';
 
-	$activity = $_POST['selectActivity'];
+	$activity = $_GET['selectActivity'];
 
-	echo $activity;
+	echo "ACT" . $activity;
 
 	$query = "INSERT INTO `prs-lifelogger-cleardb`.`activities` (`id`,`name`, `category`) VALUES (1, 'Run', 1);";
 
