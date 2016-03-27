@@ -1,4 +1,8 @@
+HI
 <?php
+
+echo "yo";
+
 $servername = "us-cdbr-azure-central-a.cloudapp.net";
 $username = "ba814e0f8544f5";
 $password = "69f5696a";
