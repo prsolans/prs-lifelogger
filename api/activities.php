@@ -9,6 +9,7 @@
 	    die ('There was an error running query[' . $conn->error . ']');
 	}
 
+	echo "COUNT: ". count($result);
 	$output = '{"activities":[';
 
     while ($row = $result->fetch_array()) {
