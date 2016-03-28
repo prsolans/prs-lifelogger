@@ -1,7 +1,7 @@
 <?php
 	require 'connect.php';
 
-	$activity = $_POST['selectActivity'];
+	$activity = $_POST['activity'];
 
 	echo "ACT" . $activity;
 
