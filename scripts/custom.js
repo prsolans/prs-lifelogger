@@ -21,7 +21,14 @@ var getActivities = function(category) {
 };
 
 var getRecentActivities = function() {
-	
+    $.getJSON("../api/activities.json", function(data) {
+    	table = "<table>";
+        $.each(data["activities"], function() {
+            table .= "<tr><td>" . this.name . "</td><td>" . this.category . "</td></tr>";
+        });
+        table .= "</table>";
+        $("#recentActivities").append(table);
+    });
 };
 
 $(document).ready(function() {
@@ -31,4 +38,5 @@ $(document).ready(function() {
         getActivities(cat);
     });
     getCategories();
+    getRecentActivities();
 });
