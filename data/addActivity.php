@@ -6,7 +6,7 @@
 
 	$query = "INSERT INTO `prs-lifelogger-cleardb`.`activities` (`id`, `name`, `category`) VALUES (DEFAULT, '".$activity."', '".$category."');";	
 
-	echo $query;
+	echo "<br>".$query;
 	mysqli_query($conn,$query);
 
 	mysql_close($conn);

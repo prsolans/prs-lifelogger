@@ -19,6 +19,11 @@ var getActivities = function(category) {
         });
     });
 };
+
+var getRecentActivities = function() {
+	
+};
+
 $(document).ready(function() {
     $("#selectCategory").on("change", function() {
     	$("#selectActivity option.dynamic").remove();
