@@ -12,9 +12,8 @@
 	}
 
     while ($row = $result->fetch_array()) {
-        echo 'ROW: '.$row["name"];
+        echo '<br/>ROW: '.$row["name"];
     }
-	echo $result;
 
 	mysql_close($conn);
 ?>
