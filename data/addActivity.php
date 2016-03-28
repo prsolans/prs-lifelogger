@@ -4,7 +4,8 @@
 	$activity = $_POST['activity'];
 	$category = $_POST['category'];
 
-	$query = "INSERT INTO `prs-lifelogger-cleardb`.`activities` (`id`, `name`, `category`) VALUES (DEFAULT, '$activity', '$category');";
-	
+	$query = "INSERT INTO `prs-lifelogger-cleardb`.`activities` (`id`, `name`, `category`) VALUES (DEFAULT, '".$activity."', '".$category."');";	
+
+	echo $query;
 	mysqli_query($conn,$query);
 ?>
