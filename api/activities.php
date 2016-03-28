@@ -5,18 +5,25 @@
 
 	$query = "SELECT * FROM `prs-lifelogger-cleardb`.`activities` WHERE category='".$category."';";	
 
+    $response = array();
+	$posts = array();
+
 	if (!$result = $conn->query($query)) {
 	    die ('There was an error running query[' . $conn->error . ']');
 	}
 
-	echo "COUNT: ". mysql_num_rows($result);
-	$output = '{"activities":[';
-
     while ($row = $result->fetch_array()) {
-        $output .= '{"name": "'.$row["name"].'"}';
-    }
+		$name=$row['name']; 
+		$category=$row['category']; 
 
-    $output .= ']}';
-    echo $output;
+		$activities[] = array('name'=> $name, 'category'=> $category);
+	} 
+
+	$response['activities'] = $activities;
+
+	$fp = fopen('activities.json', 'w');
+	fwrite($fp, json_encode($response));
+	fclose($fp);
+
 	mysql_close($conn);
 ?>
