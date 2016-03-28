@@ -3,7 +3,7 @@
 
 	$category = $_GET['category'];
 
-	$query = "SELECT * FROM `prs-lifelogger-cleardb`.`activities` WHERE category='".$category."';";	
+	$query = "SELECT * FROM `prs-lifelogger-cleardb`.`activities`;";	
 
     $response = array();
 	$posts = array();
