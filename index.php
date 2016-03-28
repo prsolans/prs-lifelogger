@@ -6,7 +6,7 @@
 
         // map homepage using callable
         $router->map( 'GET', '/', function() {
-            require '/views/home.php';
+            require("/views/home.php");
         });
 
 ?>
