@@ -28,14 +28,16 @@
         <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
     </head>
     <body unresolved>
-    <?php require 'classes/AltoRouter.php'; 
+    <?php 
 
-        $router = new AltoRouter();
+        require("classes/AltoRouter.php"); 
 
-        // map homepage using callable
-        $router->map( 'GET', '/', function() {
-            require '/views/home.php';
-        });
+        // $router = new AltoRouter();
+
+        // // map homepage using callable
+        // $router->map( 'GET', '/', function() {
+        //     require '/views/home.php';
+        // });
 
     ?>
        
