@@ -9,7 +9,7 @@
 	    die ('There was an error running query[' . $conn->error . ']');
 	}
 
-	echo "COUNT: ". ,mysql_num_rows($result);
+	echo "COUNT: ". mysql_num_rows($result);
 	$output = '{"activities":[';
 
     while ($row = $result->fetch_array()) {
