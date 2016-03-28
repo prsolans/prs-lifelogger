@@ -6,9 +6,9 @@
 	$query = "SELECT * FROM `prs-lifelogger-cleardb`.`activities` WHERE category='".$category."';";	
 
 	echo "<br>".$query;
-	$result = mysqli_query($conn,$query);
+	//$result = mysqli_query($conn,$query);
 
-	echo $result;
+	//echo $result;
 
-	mysql_close($conn);
+	//mysql_close($conn);
 ?>
