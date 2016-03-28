@@ -12,10 +12,10 @@
 	$output = '{"activities":[';
 
     while ($row = $result->fetch_array()) {
-        $output += '{"name": "'.$row["name"].'"}';
+        $output .= '{"name": "'.$row["name"].'"}';
     }
 
-    $output += ']}';
+    $output .= ']}';
     echo $output;
 	mysql_close($conn);
 ?>
