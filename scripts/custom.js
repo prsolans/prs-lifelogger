@@ -24,9 +24,9 @@ var getRecentActivities = function() {
     $.getJSON("../api/activities.json", function(data) {
     	table = "<table>";
         $.each(data["activities"], function() {
-            table .= "<tr><td>" . this.name . "</td><td>" . this.category . "</td></tr>";
+            table += "<tr><td>" + this.name + "</td><td>" + this.category + "</td></tr>";
         });
-        table .= "</table>";
+        table += "</table>";
         $("#recentActivities").append(table);
     });
 };
