@@ -8,4 +8,6 @@
 
 	echo $query;
 	mysqli_query($conn,$query);
+
+	mysql_close($conn);
 ?>
