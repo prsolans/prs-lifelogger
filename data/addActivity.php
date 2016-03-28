@@ -1,11 +1,11 @@
 <?php
 	require 'connect.php';
 
-	$activity = $_GET['selectActivity'];
+	$activity = $_POST['selectActivity'];
 
 	echo "ACT" . $activity;
 
-	$query = "INSERT INTO `prs-lifelogger-cleardb`.`activities` (`id`,`name`, `category`) VALUES (1, 'Run', 1);";
+	$query = "INSERT INTO `prs-lifelogger-cleardb`.`activities` (`id`,`name`, `category`) VALUES (1, $activity, 1);";
 
 	echo $query;
 	

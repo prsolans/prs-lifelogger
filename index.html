@@ -34,12 +34,12 @@
         <h2>
             Categories
         </h2>
-        <form action="data/addActivity.php" method="get">
+        <form action="data/addActivity.php" method="post">
             <fieldset class="form-group">
                 <label>
                     Category
                 </label>
-                <select id="selectCategory">
+                <select id="selectCategory" name="category">
                     <option>
                         Select category
                     </option>
@@ -49,7 +49,7 @@
                 <label>
                     Activity
                 </label>
-                <select id="selectActivity">
+                <select id="selectActivity" name="activity">
                     <option>
                         Select activity
                     </option>
