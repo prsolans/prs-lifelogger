@@ -1,8 +1,6 @@
 <?php
 	require '../data/connect.php';
 
-	$category = $_GET['category'];
-
 	$query = "SELECT * FROM `prs-lifelogger-cleardb`.`activities`;";	
 
     $response = array();
